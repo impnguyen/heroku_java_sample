@@ -37,7 +37,7 @@ public class TestController {
         return headers;
     }
 
-    //how to call: 
+    //how to call: http://localhost:8080/api/v1/translate?source=%22Junge,%20was%20ist%20denn%20mit%20dir%20los%22
     @GetMapping("/translate")
     public String translateForPro(@RequestParam String source) {
         Translate translate = TranslateOptions.getDefaultInstance().getService();
